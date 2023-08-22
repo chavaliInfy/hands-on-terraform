@@ -1,7 +1,7 @@
 resource "google_container_cluster" "gke-cluster" {
   name               = "${var.project}-cluster"
   location           = var.gcp_zone
-  initial_node_count = 3
+  initial_node_count = 2
 
   node_config {
     preemptible  = true
